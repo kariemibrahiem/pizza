@@ -1,0 +1,233 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+img{
+    cursor: pointer;
+}
+::-webkit-scrollbar{
+    background-color: rgb(255, 0, 0);
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: red;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgba(255, 255, 0, 0.726);
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: yellow;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background:linear-gradient( -200deg , rgb(84, 83, 83) , rgb(115, 9, 9));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+}
+h1{
+    cursor: pointer;
+}
+/*list */
+.list{
+    width: 260px;
+    background:linear-gradient( -200deg , rgb(237, 72, 72) , rgb(157, 98, 15) );
+    position: absolute;
+    top: 1%;
+    z-index: 999;
+    right: 5px;
+    height: 80vh;
+    display: flex;
+    padding: 40px 10px 0px 10px;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+    display: none;
+}
+.list:hover{
+    background-color: rgb(237, 72, 72) ;
+}
+.list_ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 90%;
+    padding: 5px 30px;
+}
+.list_li{
+    display: flex;
+    align-items: center;
+    background:linear-gradient( -200deg , rgb(85, 79, 17) , rgb(144, 82, 8));
+    border-radius: 10px;
+}
+.list_icon_close{
+    position: absolute;
+    top: 1%;
+    right: 5px;
+    z-index: 1000;
+    background-color: rgb(237, 222, 11);
+    border-radius: 10px;
+    display: none;
+}
+.list_icon_open{
+    position: absolute;
+    top: 1%;
+    right: 5px;
+    z-index: 1000;
+    background-color: rgb(237, 222, 11);
+    border-radius: 10px;
+}
+.list_a{
+    text-decoration: none;
+    font-size: 20px;
+    color: brown;
+    font-weight: 700;
+    padding: 4px 40px;
+    transition: .5s;
+    border-radius: 10px;
+
+}
+.list_li{
+    background-color: rgb(0, 0, 0);
+    color: brown;
+}
+
+/*nav sec*/
+.nav_div{
+    width: 100%;
+    height: fit-content;
+    clip-path: polygon(0 0, 100% 0%, 100% 87%, 0% 100%);
+    background:linear-gradient( -200deg , rgb(255, 124, 1) , rgb(159, 8, 8));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 15px;
+}
+nav{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.h1_span{
+    transition: .5s;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.h1_span:hover{
+    text-shadow: 10px 10px hsl(0, 100%, 50% , .600);
+    color: rgba(255, 255, 0, 0.695);
+}
+.nav_ul{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+}
+.nav_li a{
+    transition: .5s;
+}
+.nav_li a:hover{
+    scale: 1.3;
+}
+.pizza_img{
+    width: 1000px;
+    height: 1000px;
+    position: fixed;
+    top: 0%;
+    left: 70%;
+    z-index: -1;
+}
+/*the add1 sec*/
+.add1{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-evenly;
+    flex-grow: 1;
+    flex-direction: row;
+    background-color: black;
+    width: 100%;
+    margin: 30px 0px;
+    padding: 0px 10px;
+}
+.add1_div{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    background-color: black;
+}
+.add1_div:hover{
+    background-color: rgb(243, 243, 65);
+}
+.icon{
+    width: 40px;
+    height: 40px;
+}
+
+/*the body sec*/
+
+.body{
+    position: relative;
+    width: 90%;
+    height: 300px;
+    border-radius: 20px;
+    padding: 10px;
+    z-index: 1;
+    background-color: rgba(23, 26, 26, 0.597);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 50px 0px ;
+    gap: 10px;
+}
+.bod_h1{
+    color: rgb(195, 23, 23);
+    text-transform: uppercase;
+    float: left;
+}
+.body p{
+    color: red;
+    font-size: 20px;
+    font-weight: 700;
+    word-spacing: 10px;
+}
+p{
+    direction: ltr;
+    color: red;
+    font-weight: 700;
+    margin: 25px 2px;
+}
+.bod_img{
+    height: 340px;
+}
+/* the card sec*/
+.bottom{
+    display: flex;
+    padding: 0px 20px;
+    gap: 5%;
+}
+.card{
+    opacity: .75;
+    background-color: yellow;
+    transition: .5s;
+}
+.card:hover{
+    background-color: transparent;
+    scale: 1.2;
+}
+/* the final sec */
+.final{
+    padding: 0px 20px;
+    width: 100%;
+    margin: 20px 0px;
+}
